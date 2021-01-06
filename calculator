@@ -1,0 +1,31 @@
+# Creating simple calculator
+
+print("Pleas select one of the operations.")
+print("One for subtraction")
+print("two for addition")
+print("Three for division")
+print("Four for multiplication")
+
+
+while True:
+
+    entry = input("Pleas select an option from 1 to 4: ")
+
+    if entry in ('1', '2', '3', '4'):
+        number1 = float(input("what is the first number: "))
+        number2 = float(input("what is the second number: "))
+
+        if entry == '1':
+            print(number1, "-", number2, "=", number1-number2)
+
+        elif entry == '2':
+            print(number1, "+", number2, "=", number1+number1)
+
+        elif entry == '3':
+            print(number1, "/", number2, "=", number1/number2)
+
+        elif entry == '4':
+            print(number1, "*", number2, "=", number1*number2)
+        break
+    else:
+        print("Wrong input")
